@@ -28,3 +28,6 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::put('articles/{article}', 'ArticleController@update');
     Route::delete('articles/{article}', 'ArticleController@delete');
 });
+
+Route::get('users', 'ArticleController@getUsersTest');
+

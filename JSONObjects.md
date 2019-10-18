@@ -11,3 +11,7 @@
 	"email": "test@test.ie",
 	"password": "testtest"
 }
+/api/logout
+{
+"api_token": ""
+}

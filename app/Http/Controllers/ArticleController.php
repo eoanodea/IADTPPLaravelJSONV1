@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -30,6 +31,11 @@ class ArticleController extends Controller
         $article->delete();
 
         return response()->json(null, 204);
+    }
+
+
+    public function getUsersTest() {
+        return User::all();
     }
 
 }
