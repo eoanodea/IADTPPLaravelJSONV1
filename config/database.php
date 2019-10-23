@@ -63,7 +63,7 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => $DATABASE_URL,
+            'url' => env('DATABASE_URL'),
             'host' => $DATABASE_URL["host"],
             'port' => $DATABASE_URL["port"],
             'database' => env('DB_DATABASE', 'forge'),
